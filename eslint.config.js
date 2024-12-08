@@ -26,6 +26,8 @@ export default [
       '**/venv/**',
       '**/.eslintrc.js',
       '**/esbuild.config.js',
+      '**/esbuild-watch.config.js',
+      '**/esbuild.base.js',
     ],
   },
 ];

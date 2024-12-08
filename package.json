@@ -9,6 +9,7 @@
     "lint:fix": "eslint ./apps --fix && eslint ./packages --fix",
     "format": "prettier --write ./apps && prettier --write ./packages",
     "prepare": "husky install",
+    "web-app:dev": "pnpm --filter @checkbox/web-app run dev",
     "api:dev": "pnpm --filter @checkbox/api-server run dev",
     "cli": "pnpm --filter @checkbox/console run cli",
     "typecheck": "pnpm -r typecheck",

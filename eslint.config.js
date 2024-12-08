@@ -28,6 +28,7 @@ export default [
       '**/esbuild.config.js',
       '**/esbuild-watch.config.js',
       '**/esbuild.base.js',
+      '**/tailwind.config.js',
     ],
   },
 ];

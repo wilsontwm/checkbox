@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "baseUrl": ".",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@checkbox-console/*": ["src/*"]
+    }
+  },
+  "include": ["./**/*.ts"]
+}

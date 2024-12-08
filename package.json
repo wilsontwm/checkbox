@@ -1,0 +1,51 @@
+{
+  "name": "checkbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./apps && eslint ./packages",
+    "lint:fix": "eslint ./apps --fix && eslint ./packages --fix",
+    "format": "prettier --write ./apps && prettier --write ./packages",
+    "prepare": "husky install",
+    "api:dev": "pnpm --filter @checkbox/api-server run dev",
+    "cli": "pnpm --filter @checkbox/console run cli",
+    "typecheck": "pnpm -r typecheck",
+    "build": "pnpm -r build",
+    "clean": "pnpm -r clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.13.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "tslib": "^2.8.0",
+    "typescript-eslint": "^8.11.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint",
+      "prettier --config .prettierrc.json --check"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "typescript": "^5.6.3"
+  }
+}

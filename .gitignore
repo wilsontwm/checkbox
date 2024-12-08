@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+
+*.d.ts
+
+# Env files
+.env*
+!.env.example
+.http
